@@ -50,9 +50,9 @@ You are good to use Git for version control and collaboration now!
 
 ## Basic Commands
 
-### Maintain a Repo
+### Create a new repo
 
-#### Initialize Git
+#### 1. Initialize Git
 
 After setting you working directory, you need to initialize Git, basically telling Git that 'Hey, this is the folder I want to do version control. Please create a repo for me.' 
 
@@ -64,7 +64,7 @@ Type in: `$ git init`
 
 2. Initialize the repo: `$ git init`
 
-#### Add files and commit
+#### 2. Add files and commit
 
 So far, your repo is created, but it is still empty. Now, you need to add your files to the repo and submit them.
 
@@ -76,7 +76,7 @@ $ git add -A
 $ git commit -m 'first commit'
 ```
 
-#### Remote access
+#### 3. Add remote access
 
 Push your local repo to GitHub so that others can clone it, or you could view the changes.
 
@@ -89,15 +89,26 @@ Push your local repo to GitHub so that others can clone it, or you could view th
   $ git remote add origin git@github.com:Xiao-Ying-Liu/test.git
 ```
 
-#### Push your local repo to GitHub
+#### 4. Push your local repo to GitHub
 
 Now you are ready to push your files to GitHub: `$ git push -u origin main`
 
-#### Maintain your own repo (not a collaborative one)
 
-After pushing your initial repo to GitHub, here are the commands to maintain it.
+### Maintain an existed repo
 
-When you made some changes on your local repo (e.g., updated do files, added some papers, etc.):
+#### 1. Invite collaborator(s)
+
+Go to GitHub repo settings, on the left pane, choose *Collaborator* to invite your colleagues.
+
+#### 2. Git pull
+
+Before introducing the commands to maintain a repo, here is an important command that I would like to introduce first: `git pull`. `git pull` is basically *pulling* your GitHub repo to your local one and keep your local up-to-date.
+
+After your initial push, some changes may be made without your noticing (e.g., you edited your repo on GitHub, or your colleague(s) made some changes), so it is important that you **`pull` every time before you `push`**.
+
+#### 3. Maintain the repo
+
+After you made some changes on your local repo (e.g., updated do files, added some papers, etc.):
 
 ```{r, eval=FALSE}
 # Add new changes
@@ -106,16 +117,24 @@ $ git add -A
 # Commit the changes
 $ git commit -m 'Updated cleaning.do'
 
-# Check if your local is up-to-date, more details below
+# Check if your local is up-to-date
 $ git pull
 
 # Push the changes to GitHub
 $ git push
 ```
 
-Notice after your initial push, some changes could be made beyond your attention (e.g., you edited your repo on GitHub, or your colleague(s) made some changes), so it is important that you **`pull` every time before you `push`**.
-
-`git pull` is basically *pulling* your GitHub repo to your local and keep your local up-to-date.
-
 There are also some [advanced options](https://git-scm.com/docs/git-add) for `git add`.
-You can also learn about the difference between `git add -A` and `git add .` [here](https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add?rq=1).
+You can also learn about the difference among `git add -A`, `git add .`, and `git add -u` [here](https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add?rq=1).
+
+### Check status
+
+`git status` could be used to check current file status (which file is modified, deleted, untracked).
+
+### Check commit log
+
+`git log` displays committed snapshots.
+
+## Advanced Commands
+
+### Branch
