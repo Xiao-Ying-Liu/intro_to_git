@@ -114,7 +114,7 @@ After you made some changes on your local repo (e.g., updated do files, added so
 # Add new changes
 $ git add -A
 
-# Commit the changes
+# Submit the changes and enter a message saying what changes were made
 $ git commit -m 'Updated cleaning.do'
 
 # Check if your local is up-to-date
