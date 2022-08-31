@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Course Recommendation
+## Course and Course Website Recommendation
 
 For those of you using R, there is an excellent course (NTRES 6100) at Cornell instructed by Nina, providing hands-on instruction on how to collaborate with others using R.
 

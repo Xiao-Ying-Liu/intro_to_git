@@ -1,5 +1,5 @@
 ---
-title: "Intro to Git"
+title: ""
 output: html_document
 ---
 
@@ -26,3 +26,5 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+Reminder: do not put your local Git repo under Box or Dropbox folder to avoid synchronization issue.
