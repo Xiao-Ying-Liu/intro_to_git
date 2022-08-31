@@ -11,7 +11,7 @@
 
 
 
-<title>Intro to Git</title>
+<title>Using Git on Mac</title>
 
 <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -338,37 +338,31 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Intro to Git</h1>
+<h1 class="title toc-ignore">Using Git on Mac</h1>
 
 </div>
 
 
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting
-syntax for authoring HTML, PDF, and MS Word documents. For more details
-on using R Markdown see <a href="http://rmarkdown.rstudio.com"
-class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be
-generated that includes both content as well as the output of any
-embedded R code chunks within the document. You can embed an R code
-chunk like this:</p>
-<pre class="r"><code>summary(cars)</code></pre>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
+<p>This is the introduction for Stata users to maintain your repo using
+command line on a Mac device.</p>
+<div id="set-up" class="section level2">
+<h2>Set Up</h2>
+<ul>
+<li><p>Create a GitHub account</p></li>
+<li><p>Download Git and Git Credential Manager with command line</p>
+<pre><code>$ brew install git
+$ brew tap microsoft/git
+$ brew install --cask git-credential-manager-core</code></pre></li>
+<li><p>Authenticate access to your GitHub account</p>
+<p><a
+href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">Generate</a>
+a new SSH key and <a
+href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">add</a>
+to your account</p></li>
+</ul>
 </div>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<p><img src="index_files/figure-html/pressure-1.png" width="672" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the
-code chunk to prevent printing of the R code that generated the
-plot.</p>
+<div id="configuration" class="section level2">
+<h2>Configuration</h2>
 </div>
 
 

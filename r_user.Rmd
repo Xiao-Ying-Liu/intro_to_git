@@ -1,0 +1,14 @@
+---
+title: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Course Recommendation
+
+For those of you using R, there is an excellent course (NTRES 6100) at Cornell instructed by Nina, providing hands-on instruction on how to collaborate with others using R.
+
+You can check out her course website [here](https://nt246.github.io/NTRES-6100-data-science/index.html). This website presents each step to use Git, from A to Z.
