@@ -7,11 +7,11 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This is the introduction for Stata users to maintain your repo using command line on a Mac device.
+This is an introduction for Stata users to maintain your repo using **command line** (Lauchpad &rarr; Others &rarr; Terminal in Mac) on a Mac device. All codes below are used in command line.
 
 ## Set Up
-- Create a GitHub account
-- Download Git and Git Credential Manager with command line
+- Create your GitHub account.
+- Download Git and Git Credential Manager with command line, you might need to install [Homebrew](https://brew.sh/) first.
 
   ```{r, eval = FALSE}
   $ brew install git
@@ -19,10 +19,103 @@ This is the introduction for Stata users to maintain your repo using command lin
   $ brew install --cask git-credential-manager-core
   ```
   
-- Authenticate access to your GitHub account
+- Authenticate access to your GitHub account.
  
-  [Generate](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) a new SSH key and [add](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to your account
+  [Generate](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) a new SSH key and [add](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to your account. After doing this, you need to use SSH url when you clone a repo.
+  
+- Create a test repo on GitHub without readme file.
+
+- Change command line current directory to your repo location, and run the code shown on GitHub.
+
+  ```{r, eval = FALSE}
+  # check current directory
+  $ pwd
+  # change directory
+  $ cd 'your_path_here'
+  
+  # Create a new repo under your destination folder, below are the codes from GitHub
+  $ echo "# test" >> README.md
+  $ git init
+  $ git add README.md
+  $ git commit -m "first commit"
+  $ git branch -M main
+  $ git remote add origin git@github.com:Xiao-Ying-Liu/test.git
+  $ git push -u origin main
+  ```
+
+- Refresh your GitHub page and there should be a README file.
+
+You are good to use Git for version control and collaboration now!
 
 
+## Basic Commands
 
-## Configuration
+### Maintain a Repo
+
+#### Initialize Git
+
+After setting you working directory, you need to initialize Git, basically telling Git that 'Hey, this is the folder I want to do version control. Please create a repo for me.' 
+
+Type in: `$ git init`
+
+**Example:** I have an assignment with folders *code, output, data*. Now I want to put them on GitHub so that my teammates could clone the repo and proceed to do the remaining part.
+
+1. I change the working directory to the assignment folder: `$ cd /Users/user1/Desktop/assignment1`
+
+2. Initialize the repo: `$ git init`
+
+#### Add files and commit
+
+So far, your repo is created, but it is still empty. Now, you need to add your files to the repo and submit them.
+
+```{r, eval=FALSE}
+# Add all files
+$ git add -A
+
+# Commit the change (adding files)
+$ git commit -m 'first commit'
+```
+
+#### Remote access
+
+Push your local repo to GitHub so that others can clone it, or you could view the changes.
+
+1. First, you need to create a repo on GitHub, name it as 'assignment 1'.
+
+2. In command line, link your local repo to the remote repo
+
+```{r, eval=FALSE}
+  $ git branch -M main
+  $ git remote add origin git@github.com:Xiao-Ying-Liu/test.git
+```
+
+#### Push your local repo to GitHub
+
+Now you are ready to push your files to GitHub: `$ git push -u origin main`
+
+#### Maintain your own repo (not a collaborative one)
+
+After pushing your initial repo to GitHub, here are the commands to maintain it.
+
+When you made some changes on your local repo (e.g., updated do files, added some papers, etc.):
+
+```{r, eval=FALSE}
+# Add new changes
+$ git add -A
+
+# Commit the changes
+$ git commit -m 'Updated cleaning.do'
+
+# Check if your local is up-to-date, more details below
+$ git pull
+
+# Push the changes to GitHub
+$ git push
+```
+
+Notice after your initial push, some changes could be made beyond your attention (e.g., you edited your repo on GitHub, or your colleague(s) made some changes), so it is important that you **`pull` every time before you `push`**.
+
+`git pull` is basically *pulling* your GitHub repo to your local and keep your local up-to-date.
+
+There are also some [advanced options](https://git-scm.com/docs/git-add) for `git add`.
+You can also learn about the difference between `git add -A` and `git add .` [here](https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add?rq=1).
