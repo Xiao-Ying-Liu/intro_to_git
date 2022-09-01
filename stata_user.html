@@ -346,8 +346,10 @@ div.tocify {
 <p>This is an introduction for Stata users to maintain your repo using
 <strong>command line</strong> (Lauchpad → Others → Terminal in Mac) on a
 Mac device. All codes below are used in command line.</p>
+<hr />
 <div id="set-up" class="section level2">
-<h2>Set Up</h2>
+<h2>1. Set Up</h2>
+<hr />
 <ul>
 <li><p>Create your GitHub account.</p></li>
 <li><p>Download Git and Git Credential Manager with command line, you
@@ -383,13 +385,15 @@ file.</p></li>
 </ul>
 <p>You are good to use Git for version control and collaboration
 now!</p>
+<hr />
 </div>
 <div id="basic-commands" class="section level2">
-<h2>Basic Commands</h2>
+<h2>2. Basic Commands</h2>
+<hr />
 <div id="create-a-new-repo" class="section level3">
-<h3>Create a new repo</h3>
+<h3>2.1 Create a new repo</h3>
 <div id="initialize-git" class="section level4">
-<h4>1. Initialize Git</h4>
+<h4>2.1.1 Initialize Git</h4>
 <p>After setting you working directory, you need to initialize Git,
 basically telling Git that ‘Hey, this is the folder I want to do version
 control. Please create a repo for me.’</p>
@@ -404,7 +408,7 @@ could clone the repo and proceed to do the remaining part.</p>
 </ol>
 </div>
 <div id="add-files-and-commit" class="section level4">
-<h4>2. Add files and commit</h4>
+<h4>2.1.2 Add files and commit</h4>
 <p>So far, your repo is created, but it is still empty. Now, you need to
 add your files to the repo and submit them.</p>
 <pre class="r"><code># Add all files
@@ -414,7 +418,7 @@ $ git add -A
 $ git commit -m &#39;first commit&#39;</code></pre>
 </div>
 <div id="add-remote-access" class="section level4">
-<h4>3. Add remote access</h4>
+<h4>2.1.3 Add remote access</h4>
 <p>Push your local repo to GitHub so that others can clone it, or you
 could view the changes.</p>
 <ol style="list-style-type: decimal">
@@ -426,20 +430,21 @@ could view the changes.</p>
   $ git remote add origin git@github.com:Xiao-Ying-Liu/test.git</code></pre>
 </div>
 <div id="push-your-local-repo-to-github" class="section level4">
-<h4>4. Push your local repo to GitHub</h4>
+<h4>2.1.4 Push your local repo to GitHub</h4>
 <p>Now you are ready to push your files to GitHub:
 <code>$ git push -u origin main</code></p>
+<hr />
 </div>
 </div>
 <div id="maintain-an-existed-repo" class="section level3">
-<h3>Maintain an existed repo</h3>
+<h3>2.2 Maintain an existed repo</h3>
 <div id="invite-collaborators" class="section level4">
-<h4>1. Invite collaborator(s)</h4>
+<h4>2.2.1 Invite collaborator(s)</h4>
 <p>Go to GitHub repo settings, on the left pane, choose
 <em>Collaborator</em> to invite your colleagues.</p>
 </div>
 <div id="git-pull" class="section level4">
-<h4>2. Git pull</h4>
+<h4>2.2.2 Git pull</h4>
 <p>Before introducing the commands to maintain a repo, here is an
 important command that I would like to introduce first:
 <code>git pull</code>. <code>git pull</code> is basically
@@ -452,7 +457,7 @@ made some changes), so it is important that you
 <code>push</code></strong>.</p>
 </div>
 <div id="maintain-the-repo" class="section level4">
-<h4>3. Maintain the repo</h4>
+<h4>2.2.3 Maintain the repo</h4>
 <p>After you made some changes on your local repo (e.g., updated do
 files, added some papers, etc.):</p>
 <pre class="r"><code># Add new changes
@@ -472,22 +477,26 @@ href="https://git-scm.com/docs/git-add">advanced options</a> for
 <code>git add -A</code>, <code>git add .</code>, and
 <code>git add -u</code> <a
 href="https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add?rq=1">here</a>.</p>
+<hr />
 </div>
 </div>
 <div id="check-status" class="section level3">
-<h3>Check status</h3>
+<h3>2.3 Check status</h3>
 <p><code>git status</code> could be used to check current file status
 (which file is modified, deleted, untracked).</p>
+<hr />
 </div>
 <div id="check-commit-log" class="section level3">
-<h3>Check commit log</h3>
+<h3>2.4 Check commit log</h3>
 <p><code>git log</code> displays committed snapshots.</p>
+<hr />
 </div>
 </div>
 <div id="advanced-commands" class="section level2">
-<h2>Advanced Commands</h2>
+<h2>3. Advanced Commands</h2>
+<hr />
 <div id="branch" class="section level3">
-<h3>Branch</h3>
+<h3>3.1 Branch</h3>
 </div>
 </div>
 
