@@ -20,8 +20,6 @@ You do not have to use GitHub to access Git, as you do not have to use RStudio t
 But GitHub helps you better manage Git repos, store files on cloud, collaborate with others.
 Therefore, this intro focuses on how to use Git and how to communicate with GitHub.
 
-***
-
 *Reminder*: do not put your Git repos under **Box or Dropbox** folder in case of synchronization issue.
 
 ***
