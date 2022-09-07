@@ -18,7 +18,7 @@ This is an introduction for Stata users to maintain your repos using **command l
 - Create your GitHub account.
 - Download Git and Git Credential Manager with command line, you might need to install [Homebrew](https://brew.sh/) first.
 
-  ```{r, eval = FALSE}
+  ```sh
   $ brew install git
   $ brew tap microsoft/git
   $ brew install --cask git-credential-manager-core
@@ -32,7 +32,7 @@ This is an introduction for Stata users to maintain your repos using **command l
 
 - Change command line current directory to your repo location, and run the code shown on GitHub.
 
-  ```{r, eval = FALSE}
+  ```sh
   # check current directory
   $ pwd
   # change directory
@@ -76,7 +76,7 @@ Type in: `$ git init`
 
 So far, your repo is created, but it is still empty. Now, you need to add your files to the repo and submit them.
 
-```{r, eval=FALSE}
+```sh
 # Add all files
 $ git add -A
 
@@ -92,7 +92,7 @@ Push your local repo to GitHub so that others can clone it, or you could view th
 
 2. In command line, link your local repo to the remote repo
 
-  ```{r, eval=FALSE}
+  ```sh
   $ git branch -M main
   $ git remote add origin git@github.com:Xiao-Ying-Liu/test.git
   ```
@@ -119,7 +119,7 @@ After your initial push, some changes may be made without your noticing (e.g., y
 
 After you made some changes on your local repo (e.g., updated do files, added some papers, etc.):
 
-  ```{r, eval=FALSE}
+  ```sh
   # Add new changes
   $ git add -A
   
@@ -162,7 +162,7 @@ Git branch allows you to try out a new idea outside the **main** branch. For exa
 
 First, you need to create a branch.
 
-```{r, eval=FALSE}
+```sh
 # create a new branch named 'subset_reg'
 $ git branch subset_reg
 ```
@@ -173,7 +173,7 @@ Notice right now you only create a new branch name. To locate all future adds an
 
 If you need to switch to the main branch, you need to check out to the main branch first.
 
-```{r, eval=FALSE}
+```sh
 $ git checkout main
 ```
 
