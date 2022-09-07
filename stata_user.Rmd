@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This is an introduction for Stata users to maintain your repo using **command line** (Lauchpad &rarr; Others &rarr; Terminal in Mac) on a Mac device. All codes below are used in command line.
+This is an introduction for Stata users to maintain your repos using **command line** (Lauchpad &rarr; Others &rarr; Terminal in Mac) on a Mac device. All codes below are used with command line.
 
 ***
 
@@ -62,7 +62,7 @@ You are good to use Git for version control and collaboration now!
 
 #### 2.1.1 Initialize Git
 
-After setting you working directory, you need to initialize Git, basically telling Git that 'Hey, this is the folder I want to do version control. Please create a repo for me.' 
+Suppose you have a project folder on your computer and you want to maintain it using Git/GitHub. After setting you working directory in command line, you need to initialize Git, basically telling Git that 'Hey, this is the folder I want to do version control. Please create a repo for me.' 
 
 Type in: `$ git init`
 
@@ -92,10 +92,10 @@ Push your local repo to GitHub so that others can clone it, or you could view th
 
 2. In command line, link your local repo to the remote repo
 
-```{r, eval=FALSE}
+  ```{r, eval=FALSE}
   $ git branch -M main
   $ git remote add origin git@github.com:Xiao-Ying-Liu/test.git
-```
+  ```
 
 #### 2.1.4 Push your local repo to GitHub
 
@@ -119,19 +119,19 @@ After your initial push, some changes may be made without your noticing (e.g., y
 
 After you made some changes on your local repo (e.g., updated do files, added some papers, etc.):
 
-```{r, eval=FALSE}
-# Add new changes
-$ git add -A
-
-# Submit the changes and enter a message saying what changes were made
-$ git commit -m 'Updated cleaning.do'
-
-# Check if your local is up-to-date
-$ git pull
-
-# Push the changes to GitHub
-$ git push
-```
+  ```{r, eval=FALSE}
+  # Add new changes
+  $ git add -A
+  
+  # Submit the changes and enter a message saying what changes were made
+  $ git commit -m 'Updated cleaning.do'
+  
+  # Check if your local is up-to-date
+  $ git pull
+  
+  # Push the changes to GitHub
+  $ git push
+  ```
 
 There are also some [advanced options](https://git-scm.com/docs/git-add) for `git add`.
 You can also learn about the difference among `git add -A`, `git add .`, and `git add -u` [here](https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add?rq=1).
@@ -155,3 +155,6 @@ You can also learn about the difference among `git add -A`, `git add .`, and `gi
 ***
 
 ### 3.1 Branch
+
+<!-- Git branches allow you to try out a new idea outside the **main** branch. For example, suppose you've reached the empirical part of your project. Say, you have a binary outcome variable and you want to choose between linear probability model and Logit model. -->
+<!-- You want to keep a subset of the sample, stayers, -->

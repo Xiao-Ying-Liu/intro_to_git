@@ -343,9 +343,9 @@ div.tocify {
 </div>
 
 
-<p>This is an introduction for Stata users to maintain your repo using
+<p>This is an introduction for Stata users to maintain your repos using
 <strong>command line</strong> (Lauchpad → Others → Terminal in Mac) on a
-Mac device. All codes below are used in command line.</p>
+Mac device. All codes below are used with command line.</p>
 <hr />
 <div id="set-up" class="section level2">
 <h2>1. Set Up</h2>
@@ -394,9 +394,11 @@ now!</p>
 <h3>2.1 Create a new repo</h3>
 <div id="initialize-git" class="section level4">
 <h4>2.1.1 Initialize Git</h4>
-<p>After setting you working directory, you need to initialize Git,
-basically telling Git that ‘Hey, this is the folder I want to do version
-control. Please create a repo for me.’</p>
+<p>Suppose you have a project folder on your computer and you want to
+maintain it using Git/GitHub. After setting you working directory in
+command line, you need to initialize Git, basically telling Git that
+‘Hey, this is the folder I want to do version control. Please create a
+repo for me.’</p>
 <p>Type in: <code>$ git init</code></p>
 <p><strong>Example:</strong> I have an assignment with folders <em>code,
 output, data</em>. Now I want to put them on GitHub so that my teammates
@@ -426,8 +428,8 @@ could view the changes.</p>
 ‘assignment 1’.</p></li>
 <li><p>In command line, link your local repo to the remote repo</p></li>
 </ol>
-<pre class="r"><code>  $ git branch -M main
-  $ git remote add origin git@github.com:Xiao-Ying-Liu/test.git</code></pre>
+<pre class="r"><code>$ git branch -M main
+$ git remote add origin git@github.com:Xiao-Ying-Liu/test.git</code></pre>
 </div>
 <div id="push-your-local-repo-to-github" class="section level4">
 <h4>2.1.4 Push your local repo to GitHub</h4>
@@ -497,6 +499,8 @@ href="https://stackoverflow.com/questions/572549/difference-between-git-add-a-an
 <hr />
 <div id="branch" class="section level3">
 <h3>3.1 Branch</h3>
+<!-- Git branches allow you to try out a new idea outside the **main** branch. For example, suppose you've reached the empirical part of your project. Say, you have a binary outcome variable and you want to choose between linear probability model and Logit model. -->
+<!-- You want to keep a subset of the sample, stayers, -->
 </div>
 </div>
 

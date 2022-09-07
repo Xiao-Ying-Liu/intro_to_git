@@ -7,8 +7,23 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Intro to Git
+## Intro to Git/GitHub
 
-This is a brief intro summarizing my experience using GitHub/Git. You can find configuration information and some very basic commands here. For more information, Google and Stack Overflow will always be your best friend.
+This is a brief intro summarizing my experience using Git/GitHub. You can find configuration information and some very basic commands here. For more information, Google and Stack Overflow will always be your best friend.
 
-Reminder: do not put your Git repo under **Box or Dropbox** folder in case of synchronization issue.
+***
+
+## Git vs. GitHub
+
+They are different things. Git is a software that does version control, while GitHub is a platform that help manage Git repositories (repos afterwards). 
+You do not have to use GitHub to access Git, as you do not have to use RStudio to use R. 
+But GitHub helps you better manage Git repos, store files on cloud, collaborate with others.
+Therefore, this intro focuses on how to use Git and how to communicate with GitHub.
+
+***
+
+*Reminder*: do not put your Git repos under **Box or Dropbox** folder in case of synchronization issue.
+
+***
+
+<div style="text-align: right"> Last updated on `r format(Sys.time(), '%B %d, %Y')` </div>
