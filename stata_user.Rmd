@@ -9,6 +9,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This is an introduction for Stata users to maintain your repos using **command line** (Lauchpad &rarr; Others &rarr; Terminal in Mac) on a Mac device. All codes below are used with command line.
 
+For those of you with Windows system, the steps should be similar. Here is a good [tutorial](https://www.simplilearn.com/tutorials/git-tutorial/git-installation-on-windows).
+
 ***
 
 ## 1. Set Up
@@ -26,7 +28,7 @@ This is an introduction for Stata users to maintain your repos using **command l
   
 - Authenticate access to your GitHub account.
  
-  [Generate](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) a new SSH key and [add](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to your account. After doing this, you need to use SSH url when you clone a repo.
+  [Generate](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) a new SSH key and [add](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to your account. **After doing this, you need to use SSH url when you clone a repo.**
   
 - Create a test repo on GitHub without readme file.
 
@@ -180,8 +182,6 @@ git checkout main
 #### 3.1.3 Merge a branch
 
 `git merge` is used to combine two branches.
-
-### 3.2 Fork
 
 
 
